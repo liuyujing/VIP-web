@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>111</li>
+    <li>222</li>
+    <li>333</li>
+</ul>
+
+
+<ul>
+    <li>
+        <ul>
+            <li>qqqq</li>
+            <li>www</li>
+            <li>eee</li>
+            <li>rrr</li>
+            <li>tttt</li>
+        </ul>
+    </li>
+    <li>
+        <img src="https://www.baidu.com/img/bd_logo1.png" alt="" height="50">
+        <p>百度</p>
+    </li>
+    <li>
+        <a href="index2.html">index2</a>
+    </li>
+    <li>4444</li>
+</ul>
+
+<ol>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+    <li>1111</li>
+</ol>
+
+<!--DIY list-->
+<dl>
+    <!--DIY title-->
+    <dt>标题</dt>
+    <!--DIY description-->
+    <dd>内容</dd>
+    <dd>内容</dd>
+    <dd>
+        <dl>
+            <dt>小标题</dt>
+            <dd>111</dd>
+            <dd>222</dd>
+            <dd>333</dd>
+        </dl>
+        <ul>
+            <li>111</li>
+            <li>111</li>
+            <li>111</li>
+            <li>111</li>
+        </ul>
+        <ol>
+            <li>2222</li>
+            <li>2222</li>
+            <li>2222</li>
+            <li>2222</li>
+        </ol>
+    </dd>
+
+</dl>
+
+
+<!--表单中 不能嵌套表单-->
+<form action="">
+    <!--type 输入框的类型-->
+    <!--text 文本输入框-->
+    <!--placeholder 提示文字 点击消失-->
+    <!--value 是默认值 如果不输入 输入框里面的值是 小明-->
+    <!--label 是input的关联文本 通过for关联上input的id-->
+    <p>
+        <label for="user-name">姓名:</label>
+        <input id="user-name" type="text" placeholder="姓名" value="小明">
+    </p>
+
+    <!--type -> password密码的输入框 -->
+    <p>
+        <label for="user-password">密码:</label>
+        <input id="user-password" type="password">
+    </p>
+
+    <!--提交按钮-->
+    <input type="submit">
+    <!--重置按钮-->
+    <input type="reset">
+
+    <button>完成</button>
+
+    <!--单选框-->
+    <!--单选框的name必须是相同的 才能是单选-->
+    <!--如果希望点击文字 也可以去选择 可使用 label去关联-->
+    <!--checked 默认选择-->
+    <div>
+        <p>性别</p>
+
+        <label for="boy">男:</label>
+        <input id="boy" type="radio" value="1" name="sex" checked>
+
+        <label for="girl">女:</label>
+        <input id="girl" type="radio" value="2" name="sex">
+    </div>
+
+
+    <div>
+        <p>请选择你喜欢的专业</p>
+        <!--checkbox 复选框-->
+        <label for="web">web前端</label>
+        <input id="web" type="checkbox" checked>
+
+        <label for="iOS">iOS</label>
+        <input id="iOS" type="checkbox" checked>
+
+        <label for="android">android</label>
+        <input id="android" type="checkbox" checked>
+    </div>
+
+    <div>
+        <!--选择列表 最外层 是 select-->
+        <!--里面 是具体的选项option-->
+        <select>
+            <option>web前端</option>
+            <option selected>iOS</option>
+            <option>android</option>
+        </select>
+    </div>
+
+
+    <textarea>sjhjflfdjgs</textarea>
+
+</form>
+
+
+<input type="button" value="按钮">
+</body>
+
+</html>
